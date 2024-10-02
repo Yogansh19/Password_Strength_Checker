@@ -1,0 +1,100 @@
+/* Import Google Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Button Styles */
+.check-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.check-btn:hover {
+    background-color: #0056b3;
+}
+
+.meter {
+    background-color: #e0e0e0;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+#meter-bar {
+    height: 100%;
+    background-color: red;
+    width: 0;
+    transition: width 0.4s ease;
+}
+
+#strength-message {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.guidelines {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.guidelines li {
+    text-align: left;
+    font-size: 14px;
+    color: #999;
+}
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: red;
+}

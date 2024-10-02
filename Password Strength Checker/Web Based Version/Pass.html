@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <!-- Link to a Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="pswd.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Strength Checker</h1>
+        <p>Ensure your password is strong and secure by following the guidelines below.</p>
+        
+        <input type="password" id="password" placeholder="Enter your password">
+        
+        <!-- Button to trigger password check -->
+        <button class="check-btn" onclick="checkPassword()">Check Password</button>
+        
+        <!-- Strength meter -->
+        <div class="meter">
+            <div id="meter-bar"></div>
+        </div>
+        
+        <p id="strength-message"></p>
+        
+        <!-- Guidelines for a strong password -->
+        <ul class="guidelines">
+            <li id="length" class="invalid">At least 8 characters</li>
+            <li id="uppercase" class="invalid">At least one uppercase letter</li>
+            <li id="lowercase" class="invalid">At least one lowercase letter</li>
+            <li id="number" class="invalid">At least one number</li>
+            <li id="special" class="invalid">At least one special character</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
